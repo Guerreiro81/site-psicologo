@@ -1,0 +1,7 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  overflow: clip;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}

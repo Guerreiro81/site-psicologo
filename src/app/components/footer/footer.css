@@ -1,0 +1,42 @@
+:host {
+  display: block;
+}
+
+.footer {
+  padding: 36px 0;
+  background: var(--green-dark, #344535);
+  color: var(--white, #fff);
+}
+
+.footer-content {
+  width: min(1120px, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 32px;
+  margin: 0 auto;
+}
+
+.footer-content .logo {
+  color: var(--white, #fff);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 25px;
+}
+
+.footer-content .logo span {
+  color: #d6c6a6;
+}
+
+.footer-content p,
+.footer-content > span {
+  margin: 0;
+  color: rgb(255 255 255 / 76%);
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

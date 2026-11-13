@@ -1,12 +1,27 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { Component } from '@angular/core';
+
+import { HeaderComponent } from './components/header/header';
+import { HomeComponent } from './components/home/home';
+import { SobreComponent } from './components/sobre/sobre';
+import { AreasAtendimentoComponent } from './components/areas-atendimento/areas-atendimento';
+import { ProfissionalComponent } from './components/profissional/profissional';
+import { ContatoComponent } from './components/contato/contato';
+import { FooterComponent } from './components/footer/footer';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports: [
+    HeaderComponent,
+    HomeComponent,
+    SobreComponent,
+    AreasAtendimentoComponent,
+    ProfissionalComponent,
+    ContatoComponent,
+    FooterComponent
+  ],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('site-psicologo');
-}
+export class App {}
